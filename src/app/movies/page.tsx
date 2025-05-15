@@ -24,7 +24,7 @@ export default async function MoviesPage() {
         </Link>
         <SearchClient />
       </div>
-      <div className="sm:flex smspace-x-6 pt-4 px-4 w-full">
+      <div className="sm:flex sm:space-x-6 pt-4 px-4 w-full">
         <div className="w-full md:w-80 mb-4">
           <SidebarClient />
         </div>
