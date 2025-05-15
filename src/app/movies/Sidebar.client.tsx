@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
+//* Components
 import Radio from "~/components/Radio";
+//* Utils
 import { useFilterStore } from "~/stores/filter.store";
 
 export default function SidebarClient() {

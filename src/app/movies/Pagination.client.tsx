@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+
+//* Utils
 import { useFilterStore } from "~/stores/filter.store";
 
 export default function Pagination() {

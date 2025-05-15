@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 //* Assets
 import Logo from "~/assets/logo.svg";
+//* Components
 import MovieDetailClient from "./MovieDetail.client";
 
 export default async function MovieDetailPage({

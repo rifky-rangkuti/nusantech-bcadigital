@@ -28,7 +28,7 @@ export default async function MoviesPage() {
         <div className="w-full md:w-80 mb-4">
           <SidebarClient />
         </div>
-        <div className="flex-1 inline-grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="flex-1 inline-grid w-full grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <MovieListClient />
         </div>
       </div>

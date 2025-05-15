@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+//* Assets
 import Search from "~/assets/search.svg";
+//* Utils
 import { useFilterStore } from "~/stores/filter.store";
 
 export default function SearchClient() {
