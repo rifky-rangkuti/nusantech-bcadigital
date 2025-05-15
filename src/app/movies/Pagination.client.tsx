@@ -9,7 +9,8 @@ export default function Pagination() {
     <div className="flex space-x-2 w-full rounded-lg sticky top-[450px] p-4">
       <button
         onClick={() => prevPage()}
-        className="flex-1 h-10 rounded-lg bg-satu text-sm font-semibold text-white"
+        className="flex-1 h-10 rounded-lg bg-satu text-sm font-semibold text-white disabled:bg-gray-300"
+        disabled={true}
       >
         Previous
       </button>

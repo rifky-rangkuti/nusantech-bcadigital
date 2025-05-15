@@ -19,7 +19,7 @@ export const useFilterStore = create<FilterStore>((set) => ({
 
   page: 1,
   prevPage: () =>
-    set((state) => ({ page: state.page <= 0 ? 1 : state.page - 1 })),
+    set((state) => ({ page: state.page <= 1 ? 1 : state.page - 1 })),
   nextPage: () => set((state) => ({ page: state.page + 1 })),
   reset: () => set({ category: "default", page: 1, search: "" }),
 }));

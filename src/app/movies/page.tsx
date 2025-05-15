@@ -10,24 +10,29 @@ import SidebarClient from "./Sidebar.client";
 import PaginationClient from "./Pagination.client";
 import SearchClient from "./Search.client";
 
-export default async function Home() {
+export default async function MoviesPage() {
   return (
     <div className="h-screen overflow-auto">
-      <div className="bg-satu w-full h-24 shadow px-10 flex items-center justify-end md:justify-center sticky top-0">
+      <div className="bg-satu w-full h-24 shadow px-10 flex items-center justify-end md:justify-center sticky top-0 z-50">
         <Link href="/">
-          <Image alt="logo" src={Logo} priority className="fixed left-5 z-5" />
+          <Image
+            alt="logo"
+            src={Logo}
+            priority
+            className="fixed left-5 z-5 top-9"
+          />
         </Link>
         <SearchClient />
       </div>
-      <div className="flex space-x-6 pt-4 px-4 w-full">
-        <div className="hidden md:block md:w-80">
+      <div className="sm:flex smspace-x-6 pt-4 px-4 w-full">
+        <div className="w-full md:w-80 mb-4">
           <SidebarClient />
-          <PaginationClient />
         </div>
         <div className="flex-1 inline-grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <MovieListClient />
         </div>
       </div>
+      <PaginationClient />
     </div>
   );
 }
